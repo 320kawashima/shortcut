@@ -1,16 +1,13 @@
 ﻿// Place your key bindings in this file to overwrite the defaults
-[
-/*** **
-** done
-*******/ 
-{ "key": "ctrl+f",                "command": "actions.find" },
 
-/* commentLine */
+
+[
+
+{ "key": "ctrl+f",                "command": "actions.find" },
 { "key": "ctrl+/",                "command": "editor.action.addCommentLine",
                                      "when": "editorTextFocus" },
 
 
-/* undone */
 
 { "key": "escape",                "command": "closePeekDeclarationEditor",
                                      "when": "editorFocus && inPeekDeclarationEditor" },
@@ -382,4 +379,5 @@
 /* { "key": "ctrl+/",                "command": "editor.action.commentLine",
                                       "when": "editorTextFocus" },
  { "key": "ctrl+alt+/",         "command": "editor.action.removeCommentLine",
-*/                                      "when": "editorTextFocus" },
+                                      "when": "editorTextFocus" },
+*/
