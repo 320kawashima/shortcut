@@ -1,8 +1,8 @@
 ﻿// Place your key bindings in this file to overwrite the defaults
 [
-// //////////////////
-//done
-// //////////////////
+// 
+// done
+// 
 { "key": "ctrl+f",                "command": "actions.find" },
 
 // commentLine
@@ -376,9 +376,9 @@
 // - workbench.action.files.toggleAutoSave
 
 
-// //////////////////
+// 
 // unnecessary
-// //////////////////
+// 
 // { "key": "ctrl+/",                "command": "editor.action.commentLine",
 //                                      "when": "editorTextFocus" },
 // { "key": "ctrl+alt+/",         "command": "editor.action.removeCommentLine",
