@@ -1,16 +1,16 @@
 ﻿// Place your key bindings in this file to overwrite the defaults
 [
-////////////////////
+// //////////////////
 //done
-////////////////////
+// //////////////////
 { "key": "ctrl+f",                "command": "actions.find" },
 
-//commentLine
+// commentLine
 { "key": "ctrl+/",                "command": "editor.action.addCommentLine",
                                      "when": "editorTextFocus" },
 
 
-//undone
+// undone
 
 { "key": "escape",                "command": "closePeekDeclarationEditor",
                                      "when": "editorFocus && inPeekDeclarationEditor" },
@@ -376,10 +376,10 @@
 // - workbench.action.files.toggleAutoSave
 
 
-////////////////////
-//unnecessary
-////////////////////
-//{ "key": "ctrl+/",                "command": "editor.action.commentLine",
-//                                     "when": "editorTextFocus" },
-//{ "key": "ctrl+alt+/",         "command": "editor.action.removeCommentLine",
-//                                     "when": "editorTextFocus" },
+// //////////////////
+// unnecessary
+// //////////////////
+// { "key": "ctrl+/",                "command": "editor.action.commentLine",
+//                                      "when": "editorTextFocus" },
+// { "key": "ctrl+alt+/",         "command": "editor.action.removeCommentLine",
+//                                      "when": "editorTextFocus" },
