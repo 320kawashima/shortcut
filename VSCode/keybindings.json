@@ -1,22 +1,11 @@
-﻿// Place your key bindings in this file to overwrite the defaults
-
-
+﻿// Overwrite key bindings by placing them into your key bindings file.
 [
-
-{ "key": "ctrl+f",                "command": "actions.find" },
-{ "key": "ctrl+/",                "command": "editor.action.addCommentLine",
-                                     "when": "editorTextFocus" },
-
-
-
 { "key": "escape",                "command": "closePeekDeclarationEditor",
                                      "when": "editorFocus && inPeekDeclarationEditor" },
 { "key": "escape",                "command": "closeReferenceSearchEditor",
                                      "when": "editorFocus && inReferenceSearchEditor" },
 { "key": "escape",                "command": "cancelSelection",
                                      "when": "editorTextFocus && editorHasSelection" },
-{ "key": "ctrl+end",              "command": "cursorBottom",
-                                     "when": "editorTextFocus" },
 { "key": "ctrl+shift+end",        "command": "cursorBottomSelect",
                                      "when": "editorTextFocus" },
 { "key": "down",                  "command": "cursorDown",
@@ -24,8 +13,6 @@
 { "key": "ctrl+shift+down",       "command": "cursorDownSelect",
                                      "when": "editorTextFocus" },
 { "key": "shift+down",            "command": "cursorDownSelect",
-                                     "when": "editorTextFocus" },
-{ "key": "end",                   "command": "cursorEnd",
                                      "when": "editorTextFocus" },
 { "key": "shift+end",             "command": "cursorEndSelect",
                                      "when": "editorTextFocus" },
@@ -103,6 +90,7 @@
 { "key": ".",                     "command": "^acceptSelectedSuggestion",
                                      "when": "editorTextFocus && suggestWidgetVisible && editorLangId == 'csharp'" },
 { "key": "ctrl+f3",               "command": "actions.find" },
+{ "key": "ctrl+f",                "command": "actions.find" },
 { "key": "ctrl+d",                "command": "editor.action.addSelectionToNextFindMatch",
                                      "when": "editorFocus" },
 { "key": "shift+alt+a",           "command": "editor.action.blockComment",
@@ -149,7 +137,7 @@
                                      "when": "editorTextFocus" },
 { "key": "alt+up",                "command": "editor.action.moveLinesUpAction",
                                      "when": "editorTextFocus" },
-{ "key": "ctrl+k",         "command": "editor.action.moveSelectionToNextFindMatch",
+{ "key": "ctrl+k ctrl+d",         "command": "editor.action.moveSelectionToNextFindMatch",
                                      "when": "editorFocus" },
 { "key": "f3",                    "command": "editor.action.nextMatchFindAction",
                                      "when": "editorFocus" },
@@ -184,8 +172,6 @@
                                      "when": "editorTextFocus" },
 { "key": "f9",                    "command": "editor.debug.action.toggleBreakpoint",
                                      "when": "editorTextFocus" },
-{ "key": "tab",                   "command": "editor.emmet.action.expandAbbreviation",
-                                     "when": "editorTextFocus && !editorHasSelection && !editorHasMultipleSelections && !editorTabMovesFocus" },
 { "key": "escape",                "command": "closeFindWidget",
                                      "when": "editorFocus && findWidgetVisible" },
 { "key": "enter",                 "command": "acceptSnippet",
@@ -325,6 +311,17 @@
                                      "when": "inQuickOpen" },
 { "key": "ctrl+shift+p",          "command": "workbench.action.quickOpenNavigatePrevious",
                                      "when": "inQuickOpen" },
+
+
+                                     
+{ "key": "end",                   "command": "cursorEnd",
+                                     "when": "editorTextFocus" },
+{ "key": "ctrl+end",              "command": "cursorBottom",
+                                     "when": "editorTextFocus" },
+{ "key": "tab",                   "command": "editor.emmet.action.expandAbbreviation",
+                                     "when": "editorTextFocus && !editorHasSelection && !editorHasMultipleSelections && !editorTabMovesFocus" },
+{ "key": "ctrl+/",                "command": "editor.action.commentLine",
+                                     "when": "editorTextFocus" },
 ]
 
 
@@ -332,52 +329,50 @@
 // - deleteAllLeft
 // - deleteAllRight
 // - lineBreakInsert
-// - editor.action.goToTypeDeclaration
-// - editor.action.openLink
-// - languages.action.omnisharp.restart
 // - workbench.action.toggleSidebarPosition
-// - workbench.action.closeAllEditors
-// - workbench.action.closeOtherEditors
-// - workbench.action.evenEditorWidths
-// - workbench.action.minimizeOtherEditors
-// - workbench.action.files.saveAll
-// - workbench.action.files.saveFiles
-// - workbench.action.files.revert
-// - workbench.action.files.newFolder
-// - workbench.files.action.compareFileWith
-// - workbench.git.action.globalOpenChange
-// - workbench.action.output.showOutput
-// - editor.action.clearoutput
-// - workbench.action.markdown.showWelcome
-// - workbench.action.editor.changeEOL
-// - workbench.action.editor.changeEncoding
 // - workbench.action.openGlobalSettings
 // - workbench.action.openGlobalKeybindings
 // - workbench.action.openWorkspaceSettings
-// - workbench.action.files.openFolder
 // - workbench.action.openSnippets
-// - workbench.action.git.executeGitCommands
-// - editor.debug.action.addWatchExpression
-// - editor.debug.action.runToCursor
-// - workbench.action.debug.configure
-// - workbench.debug.action.openRepl
-// - workbench.action.tasks.terminate
-// - workbench.action.tasks.configureTaskRunner
-// - workbench.action.tasks.showLog
-// - workbench.action.tasks.runTask
 // - workbench.action.selectTheme
 // - workbench.action.toggleDevTools
 // - workbench.action.zoomReset
 // - workbench.action.appPerf
 // - workbench.action.reloadWindow
+// - workbench.action.closeAllEditors
+// - workbench.action.closeOtherEditors
+// - workbench.action.evenEditorWidths
+// - workbench.action.minimizeOtherEditors
+// - editor.action.goToTypeDeclaration
+// - editor.action.openLink
+// - languages.action.omnisharp.restart
+// - workbench.action.files.saveAll
+// - workbench.action.files.saveFiles
+// - workbench.action.files.revert
+// - workbench.action.files.newFolder
+// - workbench.files.action.compareFileWith
+// - workbench.action.files.openFolder
+// - workbench.action.git.executeGitCommands
+// - workbench.git.action.globalOpenChange
+// - editor.debug.action.addWatchExpression
+// - editor.debug.action.runToCursor
+// - workbench.action.debug.configure
+// - workbench.debug.action.openRepl
+// - workbench.action.output.showOutput
+// - editor.action.clearoutput
+// - workbench.action.markdown.showWelcome
+// - workbench.action.editor.changeEOL
+// - workbench.action.editor.changeEncoding
+// - workbench.action.tasks.terminate
+// - workbench.action.tasks.configureTaskRunner
+// - workbench.action.tasks.showLog
+// - workbench.action.tasks.runTask
 // - workbench.action.files.toggleAutoSave
 
+/*unnecessary
+{ "key": "ctrl+k ctrl+c",         "command": "editor.action.addCommentLine",
 
-/*
-** unnecessary
-*/ 
-/* { "key": "ctrl+/",                "command": "editor.action.commentLine",
-                                      "when": "editorTextFocus" },
- { "key": "ctrl+alt+/",         "command": "editor.action.removeCommentLine",
-                                      "when": "editorTextFocus" },
+{ "key": "ctrl+k ctrl+u",         "command": "editor.action.removeCommentLine",
+                                     "when": "editorTextFocus" },
+                                     "when": "editorTextFocus" },
 */
