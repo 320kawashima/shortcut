@@ -5,7 +5,7 @@
 |Ctrl+Y| |Delete Line|
 |Ctrl+Shift+Y| |Delete to Line Start|
 |Ctrl+Alt+Shift+Y| |Delete to Line End|
-
+|Ctrl+Shift+W| |Surround with Emmet|
 
 
 
